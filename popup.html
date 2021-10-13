@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SM.MS图床</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<input type="password" id="token" autocomplete="off" spellcheck="false" placeholder="填写你自己的API TOKEN">
+<form id="file-upload-form" class="uploader">
+  <input id="file-upload" type="file" name="fileUpload" accept="image/*" />
+  <label for="file-upload" id="file-drag">
+    <img id="file-image" src="#" alt="Preview" class="hidden">
+    <div id="start">
+      <i class="fa fa-download" aria-hidden="true"></i>
+      <div>选择或者拖拽文件至此处</div>
+      <div id="notimage" class="hidden">请选择图片</div>
+      <span id="file-upload-btn" class="btn btn-primary">选择一个图片</span>
+    </div>
+    <div id="response" class="hidden">
+      <div id="messages"></div>
+      <progress class="progress" id="file-progress" value="0">
+        <span>0</span>%
+      </progress>
+    </div>
+  </label>
+</form>
+<script type="text/javascript" src="popup.js"></script>
+</body>
+</html>

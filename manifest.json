@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "SM.MS图床",
+  "short_name": "SM.MS图床",
+  "description": "SM.MS图床",
+  "version": "1.0",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "background": {"service_worker": "worker.js"},
+  "action": {"default_icon": "icon.png"},
+  "permissions": ["storage","notifications","webRequest","webNavigation","clipboardWrite","clipboardRead"],
+  "host_permissions": ["*://*.sm.ms/*"],
+  "content_security_policy": {"content_security_policy": "script-src 'self' object-src 'self'"}
+}
